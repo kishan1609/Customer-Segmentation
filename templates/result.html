@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #43cea2, #185a9d);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .result-card {
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 14px;
+            width: 380px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .result-box {
+            background: #f4f6fb;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .label {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .value {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2d3748;
+            margin-top: 5px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background: #185a9d;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        a:hover {
+            background: #134e8a;
+        }
+
+        .footer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<div class="result-card">
+    <h2>Prediction Result</h2>
+
+    <div class="result-box">
+        <div class="label">Cluster</div>
+        <div class="value">{{ cluster }}</div>
+    </div>
+
+    <div class="result-box">
+        <div class="label">Customer Persona</div>
+        <div class="value">{{ persona }}</div>
+    </div>
+
+    <a href="/">Try Another Prediction</a>
+
+    <div class="footer">
+        Customer Segmentation | ML Model
+    </div>
+</div>
+
+</body>
+</html>
